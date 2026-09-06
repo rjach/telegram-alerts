@@ -1,4 +1,4 @@
-# @rojan-labs/telegram-alerts
+# @rjach/telegram-alerts
 
 Telegram alerts for SaaS founders. One message on your phone for every signup, subscription, payment or cancellation. Zero dependencies, ESM + CJS, typed, and it never throws: a Telegram outage can never break a sign-in or a billing webhook.
 
@@ -14,7 +14,7 @@ Amount: 14.99 USD
 ## Install
 
 ```bash
-npm install @rojan-labs/telegram-alerts
+npm install @rjach/telegram-alerts
 ```
 
 Node 18+ (uses the built-in `fetch`).
@@ -26,7 +26,7 @@ Node 18+ (uses the built-in `fetch`).
 3. Find the chat id and send a test:
 
    ```bash
-   TELEGRAM_BOT_TOKEN=123:abc npx @rojan-labs/telegram-alerts setup --product "Dingcut"
+   TELEGRAM_BOT_TOKEN=123:abc npx @rjach/telegram-alerts setup --product "Dingcut"
    ```
 
    It prints the chat id and sends `Dingcut - Test alert`.
@@ -38,7 +38,7 @@ Node 18+ (uses the built-in `fetch`).
    TELEGRAM_CHAT_ID=987654321
    ```
 
-The CLI also reads `./.env`, so from a project directory `npx @rojan-labs/telegram-alerts setup` is enough.
+The CLI also reads `./.env`, so from a project directory `npx @rjach/telegram-alerts setup` is enough.
 
 ## Usage
 
@@ -46,7 +46,7 @@ Create one client per product and export it:
 
 ```ts
 // lib/alerts.ts
-import { createTelegramAlerts } from '@rojan-labs/telegram-alerts';
+import { createTelegramAlerts } from '@rjach/telegram-alerts';
 
 export const alerts = createTelegramAlerts({ product: 'Dingcut' });
 // botToken and chatId default to TELEGRAM_BOT_TOKEN / TELEGRAM_CHAT_ID, read at send time.

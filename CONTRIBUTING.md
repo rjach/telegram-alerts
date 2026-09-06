@@ -12,7 +12,7 @@ Thanks for helping. This is a small package with a narrow job: get a founder a T
 ## Workflow
 
 ```bash
-git clone https://github.com/rojan-labs/telegram-alerts
+git clone https://github.com/rjach/telegram-alerts
 cd telegram-alerts
 npm ci
 npm test            # vitest

@@ -1,5 +1,5 @@
 {
-  "name": "@rojan-labs/telegram-alerts",
+  "name": "@rjach/telegram-alerts",
   "version": "0.1.0",
   "description": "Telegram alerts for SaaS founders: one message on every signup, subscription, cancellation or payment. Zero dependencies, never throws.",
   "keywords": [
@@ -15,13 +15,13 @@
     "founder"
   ],
   "license": "MIT",
-  "author": "Rojan Labs",
+  "author": "rjach",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rojan-labs/telegram-alerts.git"
+    "url": "git+https://github.com/rjach/telegram-alerts.git"
   },
-  "homepage": "https://github.com/rojan-labs/telegram-alerts#readme",
-  "bugs": "https://github.com/rojan-labs/telegram-alerts/issues",
+  "homepage": "https://github.com/rjach/telegram-alerts#readme",
+  "bugs": "https://github.com/rjach/telegram-alerts/issues",
   "type": "module",
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",

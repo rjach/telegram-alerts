@@ -6,7 +6,7 @@ Only the latest published minor receives fixes.
 
 ## Reporting
 
-Please do not open a public issue. Use [GitHub private vulnerability reporting](https://github.com/rojan-labs/telegram-alerts/security/advisories/new). You will get an acknowledgement within 72 hours and a fix or a mitigation plan within 14 days for confirmed issues.
+Please do not open a public issue. Use [GitHub private vulnerability reporting](https://github.com/rjach/telegram-alerts/security/advisories/new). You will get an acknowledgement within 72 hours and a fix or a mitigation plan within 14 days for confirmed issues.
 
 ## Scope notes
 

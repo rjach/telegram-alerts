@@ -1,5 +1,7 @@
 # Changelog
 
+## Unreleased
+
 ## 0.1.0
 
 - Initial release: `createTelegramAlerts` with `signup`, `subscription`, `payment`, `cancellation`, `event`, `send`, pure `format.*`, and `authEvents()` for Auth.js.

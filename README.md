@@ -30,6 +30,7 @@ Node 18+ (uses the built-in `fetch`).
    ```
 
    It prints the chat id and sends `Dingcut - Test alert`.
+
 4. Set both variables in your app (Vercel, `.env`, etc.):
 
    ```
@@ -56,7 +57,13 @@ Then call it wherever the event happens:
 ```ts
 await alerts.signup({ name: user.name, email: user.email, provider: 'google' });
 
-await alerts.subscription({ email, plan: 'Pro', interval: 'annual', amount: 14.99, currency: 'usd' });
+await alerts.subscription({
+  email,
+  plan: 'Pro',
+  interval: 'annual',
+  amount: 14.99,
+  currency: 'usd',
+});
 
 await alerts.payment({ email, amount: 14.99, currency: 'usd', reference: invoice.id });
 
@@ -154,14 +161,14 @@ The package has no storage, so it cannot know whether it already told you about 
 
 ```ts
 createTelegramAlerts({
-  product: 'Dingcut',           // required, message prefix
-  botToken: '...',              // default: process.env.TELEGRAM_BOT_TOKEN
-  chatId: '1,2' | ['1', '2'],   // default: process.env.TELEGRAM_CHAT_ID; several ids fan out
+  product: 'Dingcut', // required, message prefix
+  botToken: '...', // default: process.env.TELEGRAM_BOT_TOKEN
+  chatId: '1,2' | ['1', '2'], // default: process.env.TELEGRAM_CHAT_ID; several ids fan out
   timeoutMs: 5000,
-  silent: false,                // Telegram disable_notification
-  logger: console | false,      // where failures are logged
-  onError: (result) => {},      // metrics hook, called after logging
-  fetch: customFetch,           // for tests or proxies
+  silent: false, // Telegram disable_notification
+  logger: console | false, // where failures are logged
+  onError: (result) => {}, // metrics hook, called after logging
+  fetch: customFetch, // for tests or proxies
   apiBase: 'https://api.telegram.org',
 });
 ```

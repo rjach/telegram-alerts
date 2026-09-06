@@ -1,5 +1,5 @@
 # Publishes to npm when a GitHub release is published. Needs an NPM_TOKEN repo secret
-# (npm -> Access Tokens -> Granular, publish scope on @rjach). Manual
+# (npm -> Access Tokens -> Granular, publish the telegram-alerts package). Manual
 # `npm publish` from a logged-in machine works too; prepublishOnly runs the same checks.
 name: Publish
 

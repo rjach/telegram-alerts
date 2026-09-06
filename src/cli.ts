@@ -123,11 +123,3 @@ export async function main(argv = process.argv.slice(2), env = process.env): Pro
   console.log(`Sent to chat ${chatIds.join(', ')}.`);
   return 0;
 }
-
-const invokedDirectly =
-  typeof process !== 'undefined' &&
-  process.argv[1] !== undefined &&
-  /cli\.(js|ts|cjs|mjs)$/.test(process.argv[1]);
-if (invokedDirectly) {
-  main().then((code) => process.exit(code));
-}

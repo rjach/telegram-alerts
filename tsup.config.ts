@@ -11,7 +11,7 @@ export default defineConfig([
     treeshake: true,
   },
   {
-    entry: { cli: 'src/cli.ts' },
+    entry: { cli: 'src/bin.ts' },
     format: ['esm'],
     banner: { js: '#!/usr/bin/env node' },
     target: 'node18',

@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+## 0.1.1
+
+- Fix: the `telegram-alerts` bin printed nothing when run through `npx` or `node_modules/.bin`. The CLI now has a dedicated bin entry.
+
 ## 0.1.0
 
 - Initial release: `createTelegramAlerts` with `signup`, `subscription`, `payment`, `cancellation`, `event`, `send`, pure `format.*`, and `authEvents()` for Auth.js.

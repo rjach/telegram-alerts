@@ -1,7 +1,7 @@
 import { readFileSync } from 'node:fs';
 
 /**
- * Minimal `.env` loader for the CLI only, so `npx telegram-alerts setup` works from a
+ * Minimal `.env` loader for the CLI only, so `npx @rojan404/telegram-alerts setup` works from a
  * project directory without another dependency. Existing process.env values win.
  */
 export function loadDotenv(path = '.env', env: NodeJS.ProcessEnv = process.env): void {

@@ -1,5 +1,5 @@
 {
-  "name": "telegram-alerts",
+  "name": "@rojan404/telegram-alerts",
   "version": "0.1.0",
   "description": "Telegram alerts for SaaS founders: one message on every signup, subscription, cancellation or payment. Zero dependencies, never throws.",
   "keywords": [
